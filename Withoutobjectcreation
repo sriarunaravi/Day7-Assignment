@@ -1,0 +1,24 @@
+package testing;
+class myclass{
+	static String greeting="Good Morning Mam";
+	
+public static void displaygreeting() {
+	System.out.println(greeting);
+	
+}
+	
+}
+public class WithoutObject {
+public static void main(String[] args) {
+		System.out.println(myclass.greeting);
+		myclass.displaygreeting();
+		
+	}
+
+}
+Explanation:
+In the myclass class define a static variable "greeting". 
+This means the variable is shared by all instances of the MyClass class. 
+We can access this variable directly through the class name without needing to create an object.
+We define a static method displaygreeting() that prints the value of the "greeting" variable. Since this method is static, it can be called directly from the class without creating an object.
+In the "WithoutObject method", we access the static variable "greeting" and the static method  displaygreeting() directly through the class name myclass, without creating an object.
