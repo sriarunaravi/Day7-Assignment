@@ -1,0 +1,26 @@
+In Object-Oriented Programming (OOP), Multiple Inheritance is the concept where a class can inherit from more than one class. 
+This allows a class to inherit attributes and behaviors (methods) from more than one parent class.
+Java allows multiple inheritance with interfaces not with class. 
+Example:
+
+interface Animal{
+    void sound();
+}
+interface Pet {
+    void play();
+}
+class Dog implements Animal, Pet {
+    public void sound() {
+        System.out.println("Dog barks");
+    }    
+    public void play() {
+        System.out.println("Dog plays football");
+    }
+}
+    public class MultipleInheritance {
+    public static void main(String[] args) {
+        Dog myDog = new Dog();       
+        myDog.sound(); 
+        myDog.play();   
+    }
+}
